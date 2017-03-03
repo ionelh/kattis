@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kattis</title>
+</head>
+<body>
+  <script>
+    // print() overwrite
+    function print(output) {
+      console.log(output);
+    }
+    
+    // readline() overwrite
+    let index = 0;
+    function readline() {
+      const dummyInput = [
+        // mocked input goes here, replace it with your problem's input
+        '5',
+        '23',
+        '17',
+        '43',
+        '52',
+        '22'
+      ];
+      
+      if (index === dummyInput.length) {
+        return null;
+      }
+      
+      index += 1;
+      
+      return dummyInput[index - 1];
+    }
+    
+    function handleDOMContentReady() {
+      // replace this with your code and open the file in a browser to test with mocked input
+      let line;
+      let index = 0;
+      let result = 0;
+
+      while (line = readline()) {
+        if (index === 0) {
+          index += 1;
+          continue;
+        }
+        
+        let powValue = parseInt(line[line.length - 1], 10);
+        let numberValue = line.substring(0, line.length - 1);
+        result += Math.pow(numberValue, powValue);
+        
+        index += 1;
+      }
+
+      print(result);
+    }
+    
+    document.addEventListener('DOMContentLoaded', handleDOMContentReady);
+  </script>
+</html>
