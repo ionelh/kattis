@@ -13,7 +13,7 @@ def input():
 
 ################## CODE #####################
 
-# The results are always 2 consecutive numbers in the fibonacci sequence ... look more into this
+# The results are always 2 consecutive numbers in the fibonacci sequence
 
 K = int(input())
 
