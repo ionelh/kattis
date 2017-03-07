@@ -12,6 +12,7 @@ dummy_input = [
   '22223',
   '50000',
   '152000',
+  '1100',
   '1100'
 ]
 
@@ -46,10 +47,13 @@ def get_result(number):
   return demanded_number - 1
 
 line = input()
+# TODO cache results for faster execution
+cached_results = {}
 
 while True:
   try:
     line = input()
-    print(get_result(line))
+    result = get_result(line)
+    print(result)
   except EOFError:
     break
