@@ -1,4 +1,4 @@
-# Problem: https://open.kattis.com/problems/owlandfox
+# Problem: https://open.kattis.com/problems/ptice
 
 ########## GENERATE TEST CASES LOCALLY ##########
 dummy_input = [
