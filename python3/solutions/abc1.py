@@ -14,6 +14,8 @@ def input():
 
 ################## CODE #####################
 
+# TODO Use a custom compare method to sort (less iterations)
+
 asc_sorting = 'ABC'
 sort_map = {}
 numbers = sorted([int(elm) for elm in input().split(' ')])
