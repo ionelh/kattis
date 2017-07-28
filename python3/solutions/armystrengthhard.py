@@ -1,4 +1,4 @@
-# Problem: https://open.kattis.com/problems/armystrengtheasy
+# Problem: https://open.kattis.com/problems/armystrengthhard
 
 import sys
 # Cmd + D to print the results in the console
