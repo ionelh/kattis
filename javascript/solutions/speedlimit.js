@@ -3,7 +3,7 @@
 let line;
 let indexOfNewSet = 0;
 let index = 0;
-let result = '';;
+let result = '';
 let dataSet = [];
 
 while ((line = readline())) {
